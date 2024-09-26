@@ -23,8 +23,8 @@ exports.handler = async (event) => {
         const { name, email, message } = JSON.parse(event.body);
 
         const mailOptions = {
-            from: "marryana.m@gmail.com",
-            to: 'amynarra@gmail.com',
+            from: "test.m@gmail.com",
+            to: 'test.a@gmail.com',
             subject: 'New Contact Form Submission',
             text: `Заявка від ${name}!\nEmail: ${email}\nТекст: ${message}`
         };
